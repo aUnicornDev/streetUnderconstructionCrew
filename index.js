@@ -85,7 +85,7 @@ const compareDuration = (duration,currDuration)=>{
     const updateTimer =()=>{
       let duration = intervalToDuration({
         start: new Date(),
-        end: new Date(2021,8,11,22,47)
+        end: new Date(2021,9,11,0,0)
       })
       
       if(firstEncounter){
@@ -121,7 +121,7 @@ const compareDuration = (duration,currDuration)=>{
       if(e.target.classList.contains('youtube-button')){
         console.log("Youtube");
         console.log(e.target.dataset.youtubeurl);
-        let youtubeUrl = 'https://www.youtube.com/embed/' + e.target.dataset.youtubeurl
+        let youtubeUrl = 'http://www.youtube.com/embed/' + e.target.dataset.youtubeurl + '?rel=0&version=3&enablejsapi=1'
         youtubeIframe.setAttribute('src',youtubeUrl);
         youtubeVideo.classList.remove('youtube__video--hide');
 

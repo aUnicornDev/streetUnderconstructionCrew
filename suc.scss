@@ -187,11 +187,7 @@ body{
 }
 .youtube{
     &__container{
-        overflow: hidden;
-        /* 16:9 aspect ratio */
-        padding-top: 56.25%;
-        position: relative;
-     
+        aspect-ratio: 16/9;     
     }
     &__video{
         display: flex;
@@ -400,7 +396,7 @@ a.footer__item{
     background: linear-gradient(257deg, rgba(0, 0, 0, 0.595) 0%, rgba(0, 0, 0, 0.7) 94.98%);
     backdrop-filter: blur(50px);
     position: fixed;
-    z-index: 100;
+    z-index: 9;
 
     &__logo{
         padding-left: 2rem;

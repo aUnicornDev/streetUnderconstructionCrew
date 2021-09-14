@@ -112,22 +112,4 @@ const compareDuration = (duration,currDuration)=>{
     }
     updateTimer();
     let interval = setInterval(updateTimer, 1000);
-    const youtubeIframe = document.querySelector('.youtube__iframe');
-    const youtubeVideo = document.querySelector('.youtube__video');
-    const achievements = document.querySelector('.achievements');
-    const youtubeHide = document.querySelector('.youtube__video--hide');
-    achievements.addEventListener('click',e=>{
-      
-      if(e.target.classList.contains('youtube-button')){
-        console.log("Youtube");
-        console.log(e.target.dataset.youtubeurl);
-        let youtubeUrl = 'http://www.youtube.com/embed/' + e.target.dataset.youtubeurl + '?rel=0&version=3&enablejsapi=1'
-        youtubeIframe.setAttribute('src',youtubeUrl);
-        youtubeVideo.classList.remove('youtube__video--hide');
-
-      }
-
-    })
-    youtubeHide.addEventListener('click',()=>{
-      youtubeVideo.classList.add('youtube__video--hide');
-    })
+    

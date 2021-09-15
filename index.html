@@ -36,10 +36,10 @@
     <a href="./index.html"class="navigation__logo">
       <img src="./images/image 3Logo 2.png" width="40px" alt="">
     </a>
-    <div class="navigation__ham-menu">
+    <!-- <div class="navigation__ham-menu">
       <img src="./images/Hamburger menu.svg" alt="">
 
-    </div>
+    </div> -->
   </nav>
 
   <header class="hero" id="top">
@@ -51,7 +51,7 @@
       <div class="hero__crew">
         <div class="hero__crew-name">
           
-          Street<br/>Undercontruction<br/>Crew
+          Street<br/>Underconstruction<br/>Crew
         </div>
         
       </div>
@@ -178,7 +178,7 @@
       </div>
       <div class="card__image-container card__image-container--nit-j">
       </div>
-      <div class="youtube-button">
+      <div class="youtube-button" data-youtubeUrl = "qbFY5PPJQsY">
         <object data="./images/logos_youtube-icon.svg" type="image/svg+xml"></object>
       </div>
     </div>
@@ -248,7 +248,7 @@
       </div>
       <div class="card__image-container card__image-container--nitk">
       </div>
-      <div class="youtube-button">
+      <div class="youtube-button" data-youtubeUrl = "ahGsoUFF06o">
         <object data="./images/logos_youtube-icon.svg" type="image/svg+xml"></object>
       </div>
     </div>
@@ -261,9 +261,11 @@
 
   
   <section class="upcoming-events"  id = "events">
-    <h3 class="upcoming-events__heading">
-      Upcoming Events
-    </h3>
+    <div class="upcoming-events__heading-section">
+      <div class="upcoming-events__heading">
+        Upcoming Events
+      </div>
+    </div>
     <div class="inductions__image">
 
     </div>
@@ -472,9 +474,9 @@ hardwork
 </section>
 
 <section class="socials">
-  <a href="#"><img src="./images/cib_instagram.svg" alt=""></a>
-  <a href="#"><img src="./images/entypo-social_youtube.svg" alt=""></a>
-  <a href="#"><img src="./images/brandico_facebook-rect.svg" alt=""></a>
+  <a href="https://www.instagram.com/suc.nitkkr/?hl=en" target="_blank"><img src="./images/cib_instagram.svg" alt=""></a>
+  <a href="https://www.youtube.com/channel/UCpA5hohE_ZviSOu_0m6nwCw" target="_blank"><img src="./images/entypo-social_youtube.svg" alt=""></a>
+  <a href="https://www.facebook.com/pg/Street-Underconstruction-Crew-273399442691019/posts/" target="_blank"><img src="./images/brandico_facebook-rect.svg" alt=""></a>
 </section>
 
 <button class="goto-top">
@@ -486,8 +488,9 @@ hardwork
   <footer class="footer">
     <img src="./images/footer-logo.png" alt="" class = "footer__logo">
     <ul class="footer__links">
-      <li class="footer__link"><a href="" class="footer__item">Events</a></li>
-      <li class="footer__link"><a href="" class="footer__item">Gallery</a></li>
+      <li class="footer__link"><a href="#top" class="footer__item">Home</a></li>
+      <li class="footer__link"><a href="./gallery.html" class="footer__item">Gallery</a></li>
+      <li class="footer__link"><a href="#events" class="footer__item">Events</a></li>
       <li class="footer__link"><a href="" class="footer__item">Inductions</a></li>
       
     </ul>
@@ -500,10 +503,6 @@ hardwork
      </button>
      <div class="youtube__container">
       <div id="youtube__iframe"></div>
-<!-- 
-       <iframe class = "youtube__iframe"
-       src="https://www.youtube.com/embed/m8GbIL1jJ6E" >
-      </iframe> -->
     </div>
   </section>
   
@@ -562,23 +561,28 @@ hardwork
     achievements.addEventListener('click',e=>{
       
       if(e.target.classList.contains('youtube-button')){
-        console.log("Youtube");
-        console.log(e.target.dataset.youtubeurl);
         player.loadVideoById(e.target.dataset.youtubeurl,0)
-        // let youtubeUrl = 'http://www.youtube.com/embed/' + e.target.dataset.youtubeurl + '?rel=0&version=3&enablejsapi=1'
-        // youtubeIframe.setAttribute('src',youtubeUrl);
         youtubeVideo.classList.remove('youtube__video--hide');
+        window.history.pushState('forward',null,"");
 
       }
 
     })
-    youtubeHide.addEventListener('click',()=>{
+    const clickingBack = ()=>{
       youtubeVideo.classList.add('youtube__video--hide');
       stopVideo();
-    })
+      window.history.back();
+    }
+    youtubeHide.addEventListener('click',clickingBack)
+    
+    window.addEventListener("popstate", function() {
+      stopVideo();
+      youtubeVideo.classList.add('youtube__video--hide');
+    });
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
 <script type="module" src="./index.js"></script>
 <script src="./lottie.js"></script>
 </body>
+
 </html>

@@ -42,11 +42,25 @@ body {
 }
 
 .achievements__heading {
-  color: #fff;
+  position: relative;
+  color: transparent;
   font-size: 5rem;
   font-familY: Nunito;
   font-weight: 400;
-  padding: 6.3rem 0;
+  margin: 6rem 0 2rem 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  line-height: 5rem;
+}
+
+.achievements__heading::before {
+  position: absolute;
+  content: "";
+  width: 20rem;
+  height: 3px;
+  background-color: #FFAC33;
+  bottom: 0;
+  right: 0;
 }
 
 .achievements__load {
@@ -273,6 +287,41 @@ body {
 
 .upcoming-events {
   background-color: #0E0E0E;
+}
+
+.upcoming-events__heading-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upcoming-events__heading {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  font-size: 4rem;
+  font-familY: Nunito;
+  font-weight: 400;
+  margin: 4rem 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  line-height: 5rem;
+}
+
+.upcoming-events__heading::before {
+  position: absolute;
+  content: "";
+  width: 20rem;
+  height: 3px;
+  background-color: #FFAC33;
+  bottom: 0;
+  right: 0;
 }
 
 .inductions__image {

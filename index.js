@@ -113,3 +113,13 @@ const compareDuration = (duration,currDuration)=>{
     updateTimer();
     let interval = setInterval(updateTimer, 1000);
     
+// window.addEventListener('popstate',(e)=>{
+//   console.log("dhjsh")
+//   e.preventDefault();
+  
+// })
+
+// window.onhashchange = function (event) {
+//   console.log("dhjsh")
+//   event.preventDefault();
+// };

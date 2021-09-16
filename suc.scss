@@ -26,6 +26,9 @@ body{
         background-color:#1C1C1C;
         border-radius: 4px;
         position: relative;
+        &--hide{
+            display: none;
+        }
         
     }
     &__heading{
@@ -50,8 +53,21 @@ body{
         }
 
     }
+    &__load-down{
+        margin-left: 1rem;
+    }
+    &__load-up{
+        margin-left: 1rem;
+        transform: rotate(180deg);
+    }
     &__load{
+        font-size: 2rem;
         color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        cursor: pointer;
     }
 
 }
@@ -123,6 +139,92 @@ body{
             background-blend-mode: color;
             
         }
+        &--iitr{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-iitr.png');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+        }
+        &--ymca{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-ymca.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+        }
+        &--mmu{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-mmu.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+        }
+        &--nitk15{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-nitk15.png');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+        }
+        &--nitk14{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-nitk14.png');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: 225%;
+            background-position:center;
+            background-blend-mode: color;
+            
+            
+        }
+        &--nitk13{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-nitk13.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+            
+        }
+        &--nsit{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-nsit.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: cover;
+            background-position:center;
+            background-blend-mode: color;
+            
+            
+        }
+        &--thapar{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-thapar.jpeg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: 150%;
+            background-position:center;
+            background-blend-mode: color;
+            
+            
+        }
+        &--iitr12{
+            background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url('./images/achievements-iitr12.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+            border-radius: 0 4px 4px 0;
+            background-size: 150%;
+            background-position:center;
+            background-blend-mode: color;
+            
+            
+        }
     }
 }
 
@@ -192,7 +294,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-20%);
+    transform: translate(-25%,-35%);
     
     
 }
@@ -398,9 +500,12 @@ a.footer__item{
     position: relative;
     &__bg-image{
         position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
     }
     &__heading{
-        padding-top: 17rem;
+        padding-top: 10rem;
         line-height: 6.82rem;
         color:#D7CCCC;
         font-family: 'Bebas Neue';
@@ -597,4 +702,7 @@ a.footer__item{
     background: #ECECEC;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
+}
+.form-input label{
+    color: white;
 }

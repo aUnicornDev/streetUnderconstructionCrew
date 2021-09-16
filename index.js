@@ -113,13 +113,67 @@ const compareDuration = (duration,currDuration)=>{
     updateTimer();
     let interval = setInterval(updateTimer, 1000);
     
-// window.addEventListener('popstate',(e)=>{
-//   console.log("dhjsh")
-//   e.preventDefault();
-  
-// })
+    const formSubmit = document.querySelector('#form-submit');
+    const formName = document.querySelector('#name');
+    const formPhone = document.querySelector('#phone');
+    const formEmail = document.querySelector('#email');
+    const formMessage = document.querySelector('#message');
 
-// window.onhashchange = function (event) {
-//   console.log("dhjsh")
-//   event.preventDefault();
-// };
+    formSubmit.addEventListener('click',e=>{
+      e.preventDefault();
+      let sheetBestBody = {
+        Name:formName.value,
+        Phone:formPhone.value,
+        Email:formEmail.value,
+        Message:formMessage.value
+      }
+      console.log(sheetBestBody);
+      fetch("https://sheet.best/api/sheets/9da63077-34f3-4696-a4d3-8cf3db3a142d", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+          "Content-Type": "application/json",
+             },
+           body: JSON.stringify(sheetBestBody),
+      })
+      .then((r) => r.json())
+      .then((data) => {
+        // The response comes here
+        console.log(data);
+      })
+      .catch((error) => {
+        // Errors are reported there
+        console.log(error);
+  });
+    })
+
+
+const loadMore = document.querySelector('.load-more');
+const showLess = document.querySelector('.show-less');
+const achievements = document.querySelectorAll('.achievements-card');
+loadMore.addEventListener('click',()=>{
+  showLess.classList.remove('hide');
+  loadMore.classList.add('hide');
+  let i =0;
+  achievements.forEach(achievement=>{
+    if(i>4){
+      console.log(i);
+      achievement.classList.remove('achievements-card--hide')
+    }
+    i++;
+  })
+})
+
+showLess.addEventListener('click',()=>{
+  let i =0;
+  achievements.forEach(achievement=>{
+    if(i>4){
+      console.log(i);
+      achievement.classList.add('achievements-card--hide')
+    }
+    i++;
+  })
+  loadMore.classList.remove('hide');
+  showLess.classList.add('hide');
+  document.getElementById("crew-achievements").scrollIntoView(true);
+})

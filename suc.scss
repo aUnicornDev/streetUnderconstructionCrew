@@ -485,7 +485,7 @@ ul.footer__links{
     justify-content: center;
     align-items: center;
     gap:1.5rem;
-    padding-bottom: 7.7rem;
+    padding-bottom: 2rem;
 }
 a.footer__item{
     text-decoration: none;
@@ -555,7 +555,7 @@ a.footer__item{
     
 }
 .hero{
-    height: 100rem;
+    height: 125rem;
     background: linear-gradient(
         257deg, rgba(0, 0, 0, 0.595) 0%, rgba(0, 0, 0, 0.7) 94.98%);
     &__img{
@@ -566,8 +566,8 @@ a.footer__item{
         background-size: cover;
     }
         &__content{
-        top: 25rem;
-        position: absolute;
+        top: -10rem;
+        position: relative;
         width: 100%;
     }
     &__crew{
@@ -701,8 +701,173 @@ a.footer__item{
     align-items: center;
     background: #ECECEC;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
+    
 }
 .form-input label{
-    color: white;
+    color:#fff;
+    font-size: 1.6rem;
+
+    position: absolute;
+    left:0;
+    top:-25%;
+    padding:0 .3rem;
+    margin-left: 1rem;
+    background-color: #1C1C1C;
+}
+.form-input input ,textarea{
+
+    padding-left: 2rem;
+    width:35rem;
+    height:4rem;
+    border: none;
+    box-shadow:0px 0px 0px 1px #fff;
+    background-color: #1C1C1C !important;
+    color:#fff;
+    font-size: 1.6rem;
+}
+
+.contact-form{
+background-color: #1C1C1C;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+flex-direction: column;
+top:0;
+width:100%;
+z-index: 15;
+
+
+}
+.contact-heading{
+    color: #F3F3F3;
+    padding: 2rem;
+    font-size: 4rem;
+}
+.form-input{
+    // height: 7rem;
+    position: relative;
+}
+input:focus,input:active,input:focus-visible,textarea:focus,textarea:active,textarea:focus-visible{
+    border: none;
+    outline: none;
+    box-shadow:0px 0px 0px 1px #FFAC33;
+
+}
+textarea{
+    padding-top: 1.5rem;
+    height:10rem;
+}
+textarea+label{
+    top:-10% !important;
+}
+input:focus-visible +label{
+    transform: scale(.8) translate(-1.6rem,-1.5rem);
+    transition: all .2s ease-in-out;
+    
+}
+textarea:focus-visible +label{
+    transform: scale(.8) translate(-1.6rem,-1.5rem);
+    
+    transition: all .2s ease-in-out;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    padding: 4rem 0;
+}
+.form-buttons{
+    display: flex;
+    justify-content:space-evenly;
+}
+.instagram-feed{
+    width: 36rem;
+    margin :0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,12rem);
+    grid-template-areas: 
+    "inductions inductions inductions"
+    "behind the scenes"
+    "posts posts posts"
+    ;
+    gap:1rem 0;
+    &__heading{
+        text-align: center;
+        color:transparent;
+        font-size: 5rem;
+        font-familY:Nunito;
+        font-weight: 400;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        line-height: 5rem;
+        position: relative;
+        top:-2%;
+
+    }
+}
+
+.copyright{
+    padding-bottom: 7.7rem;
+    font-size: 1.2rem;
+    color: #686767;
+}
+.inductions,.behind{
+    cursor: pointer;
+}
+.inductions{
+    grid-area: inductions;
+    width: 36rem;
+    box-shadow:0px 0px 0px 2px #FFAC33;
+}
+.behind{
+    grid-area: behind;
+    width: 12rem;
+}
+.inductions::after{
+    content: url('./images/cib_instagram.svg');
+    position: absolute;
+    z-index: 1000;
+    width: 2rem;
+    height: 2rem;
+}
+.the{
+    grid-area: the;
+    width: 12rem;
+}
+
+.scenes{
+    grid-area: scenes;
+    width: 12rem;
+}
+.posts{
+    grid-area: posts;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post1{
+    width: 11rem;
+    box-shadow:0px 0px 0px 2px #FFAC33;
+}
+.post2{
+    width: 11rem;
+    box-shadow:0px 0px 0px 2px #FFAC33;
+}
+.post3{
+    width: 11rem;
+    box-shadow:0px 0px 0px 2px #FFAC33;
+}  
+.grateful{
+    font-size: 2rem;
+    line-height:3rem;
+    text-align: center;
+    font-familY:Nunito;
+    font-weight: 400;
+    color:#F3F3F3;
+    padding:4rem 0;
+
+}
+.bold{
+    font-weight: 700;
 }

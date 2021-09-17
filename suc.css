@@ -584,7 +584,7 @@ ul.footer__links {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
-  padding-bottom: 7.7rem;
+  padding-bottom: 2rem;
 }
 
 a.footer__item {
@@ -671,7 +671,7 @@ a.footer__item {
 }
 
 .hero {
-  height: 100rem;
+  height: 125rem;
   background: linear-gradient(257deg, rgba(0, 0, 0, 0.595) 0%, rgba(0, 0, 0, 0.7) 94.98%);
 }
 
@@ -684,8 +684,8 @@ a.footer__item {
 }
 
 .hero__content {
-  top: 25rem;
-  position: absolute;
+  top: -10rem;
+  position: relative;
   width: 100%;
 }
 
@@ -874,6 +874,228 @@ a.footer__item {
 }
 
 .form-input label {
-  color: white;
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0;
+  top: -25%;
+  padding: 0 .3rem;
+  margin-left: 1rem;
+  background-color: #1C1C1C;
+}
+
+.form-input input, textarea {
+  padding-left: 2rem;
+  width: 35rem;
+  height: 4rem;
+  border: none;
+  -webkit-box-shadow: 0px 0px 0px 1px #fff;
+          box-shadow: 0px 0px 0px 1px #fff;
+  background-color: #1C1C1C !important;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.contact-form {
+  background-color: #1C1C1C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+.contact-heading {
+  color: #F3F3F3;
+  padding: 2rem;
+  font-size: 4rem;
+}
+
+.form-input {
+  position: relative;
+}
+
+input:focus, input:active, input:focus-visible, textarea:focus, textarea:active, textarea:focus-visible {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 1px #FFAC33;
+          box-shadow: 0px 0px 0px 1px #FFAC33;
+}
+
+textarea {
+  padding-top: 1.5rem;
+  height: 10rem;
+}
+
+textarea + label {
+  top: -10% !important;
+}
+
+input:focus-visible + label {
+  -webkit-transform: scale(0.8) translate(-1.6rem, -1.5rem);
+          transform: scale(0.8) translate(-1.6rem, -1.5rem);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+textarea:focus-visible + label {
+  -webkit-transform: scale(0.8) translate(-1.6rem, -1.5rem);
+          transform: scale(0.8) translate(-1.6rem, -1.5rem);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+
+.form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.instagram-feed {
+  width: 36rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12rem)[3];
+      grid-template-columns: repeat(3, 12rem);
+      grid-template-areas: "inductions inductions inductions" "behind the scenes" "posts posts posts";
+  gap: 1rem 0;
+}
+
+.instagram-feed__heading {
+  text-align: center;
+  color: transparent;
+  font-size: 5rem;
+  font-familY: Nunito;
+  font-weight: 400;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  line-height: 5rem;
+  position: relative;
+  top: -2%;
+}
+
+.copyright {
+  padding-bottom: 7.7rem;
+  font-size: 1.2rem;
+  color: #686767;
+}
+
+.inductions, .behind {
+  cursor: pointer;
+}
+
+.inductions {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: inductions;
+  width: 36rem;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFAC33;
+          box-shadow: 0px 0px 0px 2px #FFAC33;
+}
+
+.behind {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: behind;
+  width: 12rem;
+}
+
+.inductions::after {
+  content: url("./images/cib_instagram.svg");
+  position: absolute;
+  z-index: 1000;
+  width: 2rem;
+  height: 2rem;
+}
+
+.the {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: the;
+  width: 12rem;
+}
+
+.scenes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: scenes;
+  width: 12rem;
+}
+
+.posts {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: posts;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post1 {
+  width: 11rem;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFAC33;
+          box-shadow: 0px 0px 0px 2px #FFAC33;
+}
+
+.post2 {
+  width: 11rem;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFAC33;
+          box-shadow: 0px 0px 0px 2px #FFAC33;
+}
+
+.post3 {
+  width: 11rem;
+  -webkit-box-shadow: 0px 0px 0px 2px #FFAC33;
+          box-shadow: 0px 0px 0px 2px #FFAC33;
+}
+
+.grateful {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  font-familY: Nunito;
+  font-weight: 400;
+  color: #F3F3F3;
+  padding: 4rem 0;
+}
+
+.bold {
+  font-weight: 700;
 }
 /*# sourceMappingURL=suc.css.map */

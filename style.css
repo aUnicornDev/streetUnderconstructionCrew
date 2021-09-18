@@ -55,7 +55,7 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
   background-color: #130C0C;
   background-image: url("./images/pattern-hills.svg"), url("/images/bg-stars.svg"), -webkit-gradient(linear, left top, right bottom, from(#211D2B), to(#211D2B));
   background-image: url("./images/pattern-hills.svg"), url("/images/bg-stars.svg"), linear-gradient(to right bottom, #211D2B, #211D2B);
@@ -113,7 +113,7 @@ body {
       grid-template-rows: var(--card-width) 50px;
   -ms-grid-columns: (var(--card-width))[4];
       grid-template-columns: repeat(4, var(--card-width));
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 .card-label {

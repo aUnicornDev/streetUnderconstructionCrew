@@ -112,80 +112,73 @@ const compareDuration = (duration,currDuration)=>{
     }
     updateTimer();
     let interval = setInterval(updateTimer, 1000);
+  
     
-    const formSubmit = document.querySelector('#form-submit');
-    const formName = document.querySelector('#name');
-    const formPhone = document.querySelector('#phone');
-    const formEmail = document.querySelector('#email');
-    const formMessage = document.querySelector('#message');
 
-    formSubmit.addEventListener('click',e=>{
-      e.preventDefault();
-      let sheetBestBody = {
-        Name:formName.value,
-        Phone:formPhone.value,
-        Email:formEmail.value,
-        Message:formMessage.value
-      }
-      console.log(sheetBestBody);
-      fetch("https://sheet.best/api/sheets/9da63077-34f3-4696-a4d3-8cf3db3a142d", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-          "Content-Type": "application/json",
-             },
-           body: JSON.stringify(sheetBestBody),
-      })
-      .then((r) => r.json())
-      .then((data) => {
-        // The response comes here
-        console.log(data);
-      })
-      .catch((error) => {
-        // Errors are reported there
-        console.log(error);
-  });
-    })
-
-
-const loadMore = document.querySelector('.load-more');
-const showLess = document.querySelector('.show-less');
-const achievements = document.querySelectorAll('.achievements-card');
-loadMore.addEventListener('click',()=>{
+  const loadMore = document.querySelector('.load-more');
+  const showLess = document.querySelector('.show-less');
+  const achievements = document.querySelectorAll('.achievements-card');
+  loadMore.addEventListener('click',()=>{
   showLess.classList.remove('hide');
   loadMore.classList.add('hide');
   let i =0;
   achievements.forEach(achievement=>{
-    if(i>4){
-      console.log(i);
-      achievement.classList.remove('achievements-card--hide')
-    }
-    i++;
+  if(i>4){
+    console.log(i);
+    achievement.classList.remove('achievements-card--hide')
+  }
+  i++;
   })
-})
-
-showLess.addEventListener('click',()=>{
+  })
+  
+  showLess.addEventListener('click',()=>{
   let i =0;
   achievements.forEach(achievement=>{
-    if(i>4){
-      console.log(i);
-      achievement.classList.add('achievements-card--hide')
-    }
-    i++;
+  if(i>4){
+    console.log(i);
+    achievement.classList.add('achievements-card--hide')
+  }
+  i++;
   })
   loadMore.classList.remove('hide');
   showLess.classList.add('hide');
   document.getElementById("crew-achievements").scrollIntoView(true);
-})
-const contactUs = document.querySelector('.contact-us');
-const contactForm = document.querySelector('.contact-form');
-contactUs.addEventListener('click',()=>{
-  console.log('yfuftyfy')
-  if(contactForm.classList.contains('hide')){
-    contactForm.classList.remove('hide');
-  }
-  else{
-    contactForm.classList.add('hide');
+  })
 
-  }
-})
+  const instaFeed = document.querySelector('.instagram-feed');
+  const instagramPost = document.querySelector('.instagram__post')
+  const instagramClose = document.querySelector('.instagram__close')
+  const feedArray = ['inductions','behind','the','scenes','post1','post2','post3']
+  instaFeed.addEventListener('click',(e)=>{
+    let index = feedArray.indexOf(e.target.classList[0]);
+    if(index!=-1){
+      let className = 'instagram-media--' + feedArray[index]
+      console.log(className);
+      document.getElementsByClassName(className)[0].classList.remove('hide');
+      document.getElementsByClassName(className)[0].classList.add('not-hidden');
+      instagramPost.classList.remove('instagram__post--hide')
+      window.history.pushState('forward',null,"");
+    }
+  })
+  instagramClose.addEventListener('click',()=>{
+    let instaIframes = document.querySelector('.not-hidden');
+    let src = instaIframes.getAttribute('src');
+    instaIframes.setAttribute('src','');
+    instaIframes.setAttribute('src',src);
+    instaIframes.classList.add('hide');
+    instaIframes.classList.remove('not-hidden');
+    
+    window.history.back();
+    instagramPost.classList.add('instagram__post--hide');
+
+
+  })
+  window.addEventListener("popstate", function() {  
+    let instaIframes = document.querySelector('.not-hidden');
+    let src = instaIframes.getAttribute('src');
+    instaIframes.setAttribute('src','');
+    instaIframes.setAttribute('src',src);
+    instaIframes.classList.add('hide');
+    instaIframes.classList.remove('not-hidden');
+    instagramPost.classList.add('instagram__post--hide');
+  });

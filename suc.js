@@ -1,19 +1,22 @@
-const formSubmit = document.querySelector('#form-submit');
+const formSubmit = document.querySelector('#contact-us-form');
 const formName = document.querySelector('#name');
 const formPhone = document.querySelector('#phone');
 const formEmail = document.querySelector('#email');
 const formMessage = document.querySelector('#message');
-
-formSubmit.addEventListener('click',e=>{
+const contactUs = document.querySelector('.contact-us');
+const contactForm = document.querySelector('.contact-form');
+const formClose = document.querySelector('#form-close');
+formSubmit.addEventListener('submit',e=>{
   e.preventDefault();
   let sheetBestBody = {
+    Timestamp:new Date().toLocaleDateString(),
     Name:formName.value,
     Phone:formPhone.value,
     Email:formEmail.value,
     Message:formMessage.value
   }
   console.log(sheetBestBody);
-  fetch("https://sheet.best/api/sheets/9da63077-34f3-4696-a4d3-8cf3db3a142d", {
+  fetch("https://sheet.best/api/sheets/a1f656fb-d7ae-4648-8ea7-2e6eb212aa6b", {
   method: "POST",
   mode: "cors",
   headers: {
@@ -30,16 +33,20 @@ formSubmit.addEventListener('click',e=>{
     // Errors are reported there
     console.log(error);
 });
+formSubmit.reset();
+contactForm.classList.add('hide');
+
+})
+
+formClose.addEventListener('click',()=>{
+  
+  contactForm.classList.add('hide');
 })
 
 
 
 
-
-const contactUs = document.querySelector('.contact-us');
-const contactForm = document.querySelector('.contact-form');
 contactUs.addEventListener('click',()=>{
-console.log('yfuftyfy')
 if(contactForm.classList.contains('hide')){
 contactForm.classList.remove('hide');
 }
@@ -50,16 +57,16 @@ contactForm.classList.add('hide');
 })
 
 
-function isMobile(){
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+// function isMobile(){
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   
   
   
-}
-else{
-  document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
+// }
+// else{
+//   document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
   
-}
-} 
+// }
+// } 
 
-isMobile()
+// isMobile()

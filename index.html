@@ -288,7 +288,7 @@
       </div>
     </div>
 
-    <div class="achievements-card achievements-card--hide">
+    <div class="achievements-card">
       <div class="card__content-container">
         <div class="card__fest">
           <div class="fest-location">
@@ -617,7 +617,7 @@
     </div>
     <div class="inductions__content">
       <div class="inductions__date">
-        24-26 SEPT 2020
+        24-26 SEPT 2021
       </div>
       <h3 class="inductions__heading">
         SUC Inductions
@@ -806,9 +806,9 @@ hardwork
       
     </div>
     <h1 class = "grateful">
-      We are gratefult to be announcing 
+      We are grateful to be announcing 
       <br/>
-      that SUC turns <span class="highlight bold">10</span> soon!!!
+      that SUC turns <span class="highlight bold">10</span> soon!
     </h1>
     <div class = "lottie__container">
 
@@ -823,6 +823,35 @@ hardwork
     </div>
 </section>
 
+<section class="history">
+  <div class="history__heading">
+    Our History
+  </div>
+  <p class="history__content">
+
+    Only sometimes do we come across people with a VISION to create something unique, the courage to put in their blood and sweat, and the passion to Dance their hearts out.
+  </p>
+  <div class="history__founders">
+
+    <figure>
+      <img src="./images/founder-d.jpg" alt="" class="history__founder">
+      <figcaption> <a href="https://www.instagram.com/diveshakakidemo/">BBOY KID EM:O</a></figcaption>
+    </figure>
+    <figure>
+      <img src="./images/founder-t.jpg" alt="" class="history__founder">
+      <figcaption><a href="https://www.instagram.com/tishaydutt/">BBOY TY</a></figcaption>
+    </figure>
+  </div>
+
+  
+  
+  <p class="history__content">
+
+    Bboy Kid EM:O (<span class="highlight">Divesh Rohilla sir</span>) and<br/>Bboy Ty (<span class="highlight">Tishay Dutta sir</span>) were two such people at NIT Kurukshetra. On 11th of October in 2011, they laid the foundation of <br/><span class="highlight">Street Underconstruction Crew</span><br/> 
+    The crew is dedicated to encourage and inspire each member to reach their full potential through one love:<br/><span class="dance">DANCE!</span><br/> Over the years with new generations joining the crew, versatility became SUC's strong hold with new danceforms being explored, introduced and assimilated. <br/><span class="highlight">And so the legacy continues..</span>
+  </p>
+</section>
+
 <section class="socials">
   <a href="https://www.instagram.com/suc.nitkkr/?hl=en" target="_blank"><img src="./images/cib_instagram.svg" alt=""></a>
   <a href="https://www.youtube.com/channel/UCpA5hohE_ZviSOu_0m6nwCw" target="_blank"><img src="./images/entypo-social_youtube.svg" alt=""></a>
@@ -831,9 +860,9 @@ hardwork
 
 <section class="contact-form hide">
   <h1 class="contact-heading">Contact Us</h1>
-  <form action="">
+  <form action="" method="POST" id="contact-us-form">
     <div class="form-input">
-      <input type="text" id="name" value = " "required>
+      <input type="text" id="name" required>
       <label for="name">Name</label>
     </div>
     <div class="form-input">
@@ -850,11 +879,18 @@ hardwork
 
     </div>
     <div class="form-buttons">
-      <button type="submit" id = "form-submit" class="btn btn--events"> Submit </button>
+      <button type = "submit" id = "form-submit" class="btn btn--events"> Submit </button>
       <button id = "form-close" class="btn btn--gallery"> Cancel </button>
     </div>
-
   </form>
+  <p class="or">
+    OR
+  </p>
+  <p class="mail-us">
+    Mail us at -- 
+    <a href="mailto:sucrew.nitkkr@gmail.com" cl>sucrew.nitkkr@gmail.com</a>
+  </p>
+
 </section>
 <button class="contact-us">
   <img src="./images/Vectorcontact.svg" alt="">
@@ -927,7 +963,7 @@ hardwork
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
       // event.target.playVideo();
-      console.log("playing");
+      // console.log("playing");
     }
     
     // 5. The API calls this function when the player's state changes.

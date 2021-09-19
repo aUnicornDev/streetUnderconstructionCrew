@@ -522,7 +522,7 @@ a.footer__item{
     font-family: Nunito;
     font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 100rem;
+    margin-bottom: 7rem;
     border-radius: 4px;
     display:flex;
     padding:1rem;
@@ -705,11 +705,11 @@ a.footer__item{
 }
 .form-input label{
     color:#fff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     position: absolute;
     left:0;
-    top:-25%;
+    top:-30%;
     padding:0 .3rem;
     margin-left: 1rem;
     background-color: #1C1C1C;
@@ -718,9 +718,10 @@ a.footer__item{
 
     padding-left: 2rem;
     width:35rem;
-    height:4rem;
+    height:4.5rem;
     border: none;
-    box-shadow:0px 0px 0px 1px #fff;
+    border: 1px solid #fff;
+    // box-shadow:0px 0px 0px 1px #fff;
     background-color: #1C1C1C !important;
     color:#fff;
     font-size: 1.6rem;
@@ -729,20 +730,21 @@ a.footer__item{
 .contact-form{
 background-color: #1C1C1C;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 position: fixed;
 flex-direction: column;
 top:0;
 width:100%;
 z-index: 15;
+height:100vh;
 
 
 }
 .contact-heading{
     color: #F3F3F3;
-    padding: 2rem;
-    font-size: 4rem;
+    padding: 3rem 0 1rem 0;
+    font-size: 3rem;
 }
 .form-input{
     // height: 7rem;
@@ -751,15 +753,17 @@ z-index: 15;
 input:focus,input:active,input:focus-visible,textarea:focus,textarea:active,textarea:focus-visible{
     border: none;
     outline: none;
-    box-shadow:0px 0px 0px 1px #FFAC33;
+    // box-shadow:0px 0px 0px 1px #FFAC33;
+    border: 1px solid #FFAC33;
 
 }
 textarea{
     padding-top: 1.5rem;
     height:10rem;
+    font-family: 'Lato';
 }
 textarea+label{
-    top:-10% !important;
+    top:-14% !important;
 }
 input:focus-visible +label{
     transform: scale(.8) translate(-1.6rem,-1.5rem);
@@ -945,17 +949,124 @@ form{
     }
 }
 
-figure{
-    position: relative;
+// figure{
+//     position: relative;
+// }
+// figcaption{
+//     position: absolute;
+//     background: linear-gradient(0deg, rgba(14, 13, 13, 0.884), rgba(196, 196, 196, 0.014));
+//     height: 100%;
+//     width: 100%;
+//     bottom:0;
+//     vertical-align:text-bottom;
+//     display: flex;
+//     align-items: flex-end;
+    
+// }
+
+.phone-number{
+    
+    display: block;
+    
+
+}
+.phone-number:not(:last-child){
+    padding-top: 3rem;
+}
+.phone-number a{
+
+    
+    color: #FFAC33;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #1C1C1C inset !important;
+
+ 
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #fff !important;
+}
+
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color:#FFF;
+    &__founder{
+        width:16rem;
+        border-radius: 50%;
+    }
+    &__content{
+        width: 36rem;
+        font-size:1.6rem;
+        text-align: center;
+        line-height:3rem;
+        margin-bottom: 6rem;
+        letter-spacing: .5px;
+    }
+    &__heading{
+        display: inline-block;
+        position: relative;
+        color:transparent;
+        font-size: 4rem;
+        font-familY:Nunito;
+        font-weight: 400;
+        margin: 4rem 0;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        line-height: 5rem;
+        &::before{
+            position: absolute;
+            content: "";
+            width:10rem;
+            height: 3px;
+            background-color: #FFAC33;
+            bottom: 0;
+            right: 0;
+
+        }
+    }
+    &__founders{
+        display: flex;
+        gap:3rem;
+        padding-bottom: 4rem;
+    }
 }
 figcaption{
-    position: absolute;
-    background: linear-gradient(0deg, rgba(14, 13, 13, 0.884), rgba(196, 196, 196, 0.014));
-    height: 100%;
-    width: 100%;
-    bottom:0;
-    vertical-align:text-bottom;
-    display: flex;
-    align-items: flex-end;
+    padding-top:1.2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+figcaption a{
+    color: #F3F3F3;
     
+    
+}
+.dance{
+    font-size: 2.5rem;
+    line-height: 6rem;
+}
+.or{
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 3rem;
+    
+}
+.mail-us{
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 3rem;
+    font-weight: 900;
+
+}
+.mail-us a{
+    color: #FFAC33;
 }

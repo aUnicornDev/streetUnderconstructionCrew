@@ -57,7 +57,7 @@
   </head>
   <body class="inductions-page">
     <nav class="navigation">
-      <a href="./index.html" class="navigation__logo">
+      <a href="." class="navigation__logo">
         <img src="./images/image 3Logo 2.png" width="40px" alt="" />
       </a>
     </nav>
@@ -77,9 +77,9 @@
       
       <section class="contact-form hide">
         <h1 class="contact-heading">Contact Us</h1>
-        <form action="">
+        <form action="" method="POST" id="contact-us-form">
           <div class="form-input">
-            <input type="text" id="name" value = " "required>
+            <input type="text" id="name" required>
             <label for="name">Name</label>
           </div>
           <div class="form-input">
@@ -96,11 +96,18 @@
       
           </div>
           <div class="form-buttons">
-            <button type="submit" id = "form-submit" class="btn btn--events"> Submit </button>
+            <button type = "submit" id = "form-submit" class="btn btn--events"> Submit </button>
             <button id = "form-close" class="btn btn--gallery"> Cancel </button>
           </div>
-      
         </form>
+        <p class="or">
+          OR
+        </p>
+        <p class="mail-us">
+          Mail us at -- 
+          <a href="mailto:sucrew.nitkkr@gmail.com" cl>sucrew.nitkkr@gmail.com</a>
+        </p>
+      
       </section>
     <button class="contact-us">
       <img src="./images/Vectorcontact.svg" alt="" />

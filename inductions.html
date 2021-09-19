@@ -54,10 +54,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="suc.css" />
+    <title>Induction Process | SUC - Street UnderConstruction Crew</title>
   </head>
   <body class="inductions-page">
     <nav class="navigation">
-      <a href="./index.html" class="navigation__logo">
+      <a href="/" class="navigation__logo">
         <img src="./images/image 3Logo 2.png" width="40px" alt="" />
       </a>
     </nav>
@@ -92,18 +93,27 @@
         have an interest in dance and can show us your dedication to learn, then
         you are a perfect fit for the crew!
       </p>
-    </section>
-    <section class="socials">
-        <a href="https://www.instagram.com/suc.nitkkr/?hl=en" target="_blank"><img src="./images/cib_instagram.svg" alt=""></a>
-        <a href="https://www.youtube.com/channel/UCpA5hohE_ZviSOu_0m6nwCw" target="_blank"><img src="./images/entypo-social_youtube.svg" alt=""></a>
-        <a href="https://www.facebook.com/pg/Street-Underconstruction-Crew-273399442691019/posts/" target="_blank"><img src="./images/brandico_facebook-rect.svg" alt=""></a>
+      <a href = "https://forms.gle/6NTatuppLssMg4WZA" target="_blank" class="inductions__register">
+        Register
+      </a>
+      <div>
+        
+          CONTACTS
+        
+        <span class="phone-number">
+          Kshitij - <a href="tel:+919757033983">9757033983</a>
+        </span>
+        <span class="phone-number">
+          Aarushi - <a href="tel:+917678553789">7678553789</a>
+          
+        </span> 
+      </div>
       </section>
-      
       <section class="contact-form hide">
         <h1 class="contact-heading">Contact Us</h1>
-        <form action="">
+        <form action="" method="POST" id="contact-us-form">
           <div class="form-input">
-            <input type="text" id="name" value = " "required>
+            <input type="text" id="name" required>
             <label for="name">Name</label>
           </div>
           <div class="form-input">
@@ -120,8 +130,43 @@
       
           </div>
           <div class="form-buttons">
-            <button type="submit" id = "form-submit" class="btn btn--events"> Submit </button>
+            <button type = "submit" id = "form-submit" class="btn btn--events"> Submit </button>
             <button id = "form-close" class="btn btn--gallery"> Cancel </button>
+          </div>
+        </form>
+        <p class="or">
+          OR
+        </p>
+        <p class="mail-us">
+          Mail us at -- 
+          <a href="mailto:sucrew.nitkkr@gmail.com" cl>sucrew.nitkkr@gmail.com</a>
+        </p>
+      
+      </section>
+      
+      <section class="contact-form hide">
+        <h1 class="contact-heading">Contact Us</h1>
+        <form action="" method="POST" id="contact-us-form">
+          <div class="form-input">
+            <input type="text" id="name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="form-input">
+            <input type="number" id="phone" required>
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-input">
+            <input type="email" id="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="form-input">
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <label for="Message">Message</label>
+      
+          </div>
+          <div class="form-buttons">
+            <button type = "submit" id = "form-submit" class="btn btn--events"> Submit </button>
+            <!-- <button type = "submit" id = "form-close" class="btn btn--gallery"> Cancel </button> -->
           </div>
       
         </form>
@@ -133,7 +178,7 @@
       <img src="./images/footer-logo.png" alt="" class="footer__logo" />
       <ul class="footer__links">
         <li class="footer__link">
-          <a href="./index.html" class="footer__item">Home</a>
+          <a href="/" class="footer__item">Home</a>
         </li>
         <li class="footer__link">
           <a href="./gallery.html" class="footer__item">Gallery</a>

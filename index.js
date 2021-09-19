@@ -123,7 +123,7 @@ const compareDuration = (duration,currDuration)=>{
   loadMore.classList.add('hide');
   let i =0;
   achievements.forEach(achievement=>{
-  if(i>4){
+  if(i>5){
     console.log(i);
     achievement.classList.remove('achievements-card--hide')
   }
@@ -134,7 +134,7 @@ const compareDuration = (duration,currDuration)=>{
   showLess.addEventListener('click',()=>{
   let i =0;
   achievements.forEach(achievement=>{
-  if(i>4){
+  if(i>5){
     console.log(i);
     achievement.classList.add('achievements-card--hide')
   }

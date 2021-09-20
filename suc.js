@@ -39,7 +39,7 @@ contactForm.classList.add('hide');
 })
 
 formClose.addEventListener('click',()=>{
-  
+  window.history.back();
   contactForm.classList.add('hide');
 })
 
@@ -49,24 +49,23 @@ formClose.addEventListener('click',()=>{
 contactUs.addEventListener('click',()=>{
 if(contactForm.classList.contains('hide')){
 contactForm.classList.remove('hide');
-}
-else{
-contactForm.classList.add('hide');
-
+window.history.pushState('forward',null,"");
 }
 })
+window.addEventListener("popstate", function() {  
+  contactForm.classList.add('hide');
+});
 
+// function isMobile(){
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  
+  
+  
+// }
+// else{
+//   document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
+  
+// }
+// } 
 
-function isMobile(){
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  
-  
-  
-}
-else{
-  document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
-  
-}
-} 
-
-isMobile()
+// isMobile()

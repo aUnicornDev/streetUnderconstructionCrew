@@ -124,8 +124,8 @@ body {
 }
 
 .card__image-container--iit-d {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/achievements-iitd.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/achievements-iitd.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/achievements-iitd.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/achievements-iitd.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -134,8 +134,8 @@ body {
 }
 
 .card__image-container--iit-m {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(72, 35, 101, 0.58)), to(rgba(72, 35, 101, 0.58))), url("./images/achivements-iitm.jpg");
-  background: linear-gradient(0deg, rgba(72, 35, 101, 0.58), rgba(72, 35, 101, 0.58)), url("./images/achivements-iitm.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(72, 35, 101, 0.58)), to(rgba(72, 35, 101, 0.58))), url("./images/achivements-iitm.webp");
+  background: linear-gradient(0deg, rgba(72, 35, 101, 0.58), rgba(72, 35, 101, 0.58)), url("./images/achivements-iitm.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -145,8 +145,8 @@ body {
 }
 
 .card__image-container--nit-j {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/achievements-nitj.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/achievements-nitj.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/achievements-nitj.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/achievements-nitj.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -156,8 +156,8 @@ body {
 }
 
 .card__image-container--srm {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.3)), to(rgba(195, 131, 245, 0.3))), url("./images/achievements-srm.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.3), rgba(195, 131, 245, 0.3)), url("./images/achievements-srm.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.3)), to(rgba(195, 131, 245, 0.3))), url("./images/achievements-srm.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.3), rgba(195, 131, 245, 0.3)), url("./images/achievements-srm.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -166,8 +166,8 @@ body {
 }
 
 .card__image-container--nitk {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nitk.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nitk.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nitk.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nitk.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -177,8 +177,8 @@ body {
 }
 
 .card__image-container--iitr {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-iitr.png");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-iitr.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-iitr.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-iitr.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -188,8 +188,8 @@ body {
 }
 
 .card__image-container--ymca {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-ymca.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-ymca.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-ymca.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-ymca.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -199,8 +199,8 @@ body {
 }
 
 .card__image-container--mmu {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-mmu.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-mmu.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-mmu.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-mmu.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -232,8 +232,8 @@ body {
 }
 
 .card__image-container--nitk13 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nitk13.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nitk13.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nitk13.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nitk13.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -243,8 +243,8 @@ body {
 }
 
 .card__image-container--nsit {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nsit.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nsit.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-nsit.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-nsit.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -254,8 +254,8 @@ body {
 }
 
 .card__image-container--thapar {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-thapar.jpeg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-thapar.jpeg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-thapar.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-thapar.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -265,8 +265,8 @@ body {
 }
 
 .card__image-container--iitr12 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-iitr12.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-iitr12.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.58)), to(rgba(195, 131, 245, 0.58))), url("./images/achievements-iitr12.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.58), rgba(195, 131, 245, 0.58)), url("./images/achievements-iitr12.webp");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   border-radius: 0 4px 4px 0;
@@ -452,7 +452,7 @@ body {
 .inductions__image {
   width: 100%;
   height: 30rem;
-  background-image: url("./images/induction-bg.jpg");
+  background-image: url("./images/induction-bg.webp");
   background-size: 110%;
   background-position: center center;
 }
@@ -677,8 +677,8 @@ a.footer__item {
 
 .hero__img {
   height: 34rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/hero-bg.jpg");
-  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/hero-bg.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(195, 131, 245, 0.2)), to(rgba(195, 131, 245, 0.2))), url("./images/hero-bg.webp");
+  background: linear-gradient(0deg, rgba(195, 131, 245, 0.2), rgba(195, 131, 245, 0.2)), url("./images/hero-bg.webp");
   background-position: center center;
   background-size: cover;
 }
@@ -776,6 +776,7 @@ a.footer__item {
 
 .btn--events {
   width: 40%;
+  margin-right: 3rem;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

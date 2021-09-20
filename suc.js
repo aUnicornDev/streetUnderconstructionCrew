@@ -56,16 +56,16 @@ window.addEventListener("popstate", function() {
   contactForm.classList.add('hide');
 });
 
-// function isMobile(){
-// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+function isMobile(){
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   
   
   
-// }
-// else{
-//   document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
+}
+else{
+  document.querySelector('body').innerHTML = `<div class="legacy__heading">The Desktop site is still <br/><span class="highlight">UNDERCONSTRUCTION</span> 🙌</div><div class="grateful">Please visit the Mobile version. Thank YOU!</div>`;
   
-// }
-// } 
+}
+} 
 
-// isMobile()
+isMobile()

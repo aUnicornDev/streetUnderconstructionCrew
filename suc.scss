@@ -1070,3 +1070,38 @@ figcaption a{
 .mail-us a{
     color: #FFAC33;
 }
+.gallery{
+    &__image{
+        width: 100%;
+    }
+    &__container{
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: repeat(4 , 9rem);
+        grid-template-areas: 
+        "image1 image1 image1 image1"
+        "image1 image1 image1 image1"
+        "image2 image2 image3 image3"
+        "image2 image2 image3 image3"
+        "image4 image4 image4 image4"
+        ;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        gap:1rem;
+        
+    }
+}
+.image1{
+    grid-area: image1;
+    width: 36rem;
+}
+.image2{
+    grid-area: image2;
+    width: 18rem;
+}
+.image3{
+    grid-area: image3;
+    width: 18rem;
+}

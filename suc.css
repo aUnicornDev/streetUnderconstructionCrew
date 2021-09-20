@@ -1319,4 +1319,45 @@ figcaption a {
 .mail-us a {
   color: #FFAC33;
 }
+
+.gallery__image {
+  width: 100%;
+}
+
+.gallery__container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (9rem)[4];
+      grid-template-columns: repeat(4, 9rem);
+      grid-template-areas: "image1 image1 image1 image1" "image1 image1 image1 image1" "image2 image2 image3 image3" "image2 image2 image3 image3" "image4 image4 image4 image4";
+  gap: 1rem;
+}
+
+.image1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: image1;
+  width: 36rem;
+}
+
+.image2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: image2;
+  width: 18rem;
+}
+
+.image3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: image3;
+  width: 18rem;
+}
 /*# sourceMappingURL=suc.css.map */

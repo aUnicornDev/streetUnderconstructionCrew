@@ -4,7 +4,7 @@
 }
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 body{
     font-size: 1rem;
@@ -1000,6 +1000,7 @@ input:-webkit-autofill
     width: 100%;
     flex-direction: column;
     color:#FFF;
+    font-family: 'Lato';
     &__founder{
         width:16rem;
         border-radius: 50%;

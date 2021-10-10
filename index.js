@@ -14,7 +14,12 @@ const compareDuration = (duration,currDuration)=>{
     let changesFound = new Array();
     if(currDuration.seconds===0 && currDuration.minutes===0 && currDuration.hours==0 && currDuration.days===0){
       clearInterval(interval);
-      alert('Timer Complete')
+      
+      document.querySelector('.clock').classList.add('hide');;
+      document.querySelector('.congratulate').click();
+      document.querySelector('.grateful').innerHTML = `      We are grateful to be announcing 
+      <br>
+      that SUC turned <span class="highlight bold">10</span> !! <br> Celeberations all around !!!`
     }
     changesFound.push({id:'0',change : !(duration.seconds===currDuration.seconds),maxValue : 59,duration:duration.seconds});
     changesFound.push({id:'1',change : !(duration.minutes===currDuration.minutes),maxValue : 59,duration:duration.minutes});
@@ -99,7 +104,14 @@ const compareDuration = (duration,currDuration)=>{
           years: -1
         }   
       }
-
+     let todayDate = new Date().toLocaleDateString()
+    if(todayDate === '11/10/2021' ){
+      document.querySelector('.clock').classList.add('hide');
+      document.querySelector('.grateful').innerHTML = `      We are grateful to be announcing 
+      <br>
+      that SUC turned <span class="highlight bold">10</span> !! <br> Celeberations all around !!!`
+      clearInterval(interval);
+    }  
     let changesFound = compareDuration(duration,currDuration);
 
     changesFound.forEach(changeObj=>{

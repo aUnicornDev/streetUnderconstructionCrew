@@ -105,7 +105,7 @@ const compareDuration = (duration,currDuration)=>{
         }   
       }
      let todayDate = new Date().toLocaleDateString()
-    if(todayDate === '11/10/2021' ){
+    if(todayDate === '10/11/2021' ){
       document.querySelector('.clock').classList.add('hide');
       document.querySelector('.grateful').innerHTML = `      We are grateful to be announcing 
       <br>
